@@ -17,9 +17,7 @@ class Stack:
     # removing so set the size -= 1
     def pop(self):
         # pass
-        if self.size == 0:
-            pass
-        else:
+        if self.size > 0:
             self.size -= 1
             return self.storage.remove_from_head()
 

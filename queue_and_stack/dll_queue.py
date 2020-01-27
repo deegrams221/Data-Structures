@@ -29,9 +29,12 @@ class Queue:
         # self.size -= 1
         # return self.storage.remove_from_head()
         # pass
-        if self.size == 0:
-            pass
-        else:
+        # if self.size == 0:
+        #     pass
+        # else:
+        #     self.size -= 1
+        #     return self.storage.remove_from_head()
+        if self.size > 0:
             self.size -= 1
             return self.storage.remove_from_head()
 
